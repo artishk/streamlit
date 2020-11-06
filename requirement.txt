@@ -1,6 +1,6 @@
 streamlit==0.67.1
-pandas @ file:///C:/ci/pandas_1592833613419/work
+pandas==1.0.5
 base58==2.0.1
-matplotlib @ file:///C:/ci/matplotlib-base_1592837548929/work
+matplotlib==3.2.2
 numpy==1.19.4
 seaborn==0.10.1
