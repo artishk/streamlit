@@ -3,4 +3,4 @@ pandas==1.1.2
 base58==2.0.1
 numpy==1.19.2
 seaborn==0.11.0
-
+matplotlib==3.3.2
