@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 import base64
 import matplotlib.pyplot as plt
-from matplotlib.backends.backend_agg import RendererAgg
 import seaborn as sns
 import numpy as np
 # import selenium
@@ -77,9 +76,6 @@ if st.button('Intercorrelation Heatmap'):
     df_selected_team.to_csv('output.csv', index=False)
     df = pd.read_csv('output.csv')
 
-_lock = RendererAgg.lock
-
-with _lock:
     corr = df.corr()
     mask = np.zeros_like(corr)
     mask[np.triu_indices_from(mask)] = True
